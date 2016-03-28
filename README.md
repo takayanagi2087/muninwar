@@ -2,13 +2,13 @@
 Munin用のTomcat pluginです。
 
 ##特徴
-* すでにperl等で作られたものはありますが、似たような機能をjava servletで実装しました。<br/>
-* muninのpluginの機能は全てservletで実装してあります。<br/>
-* あとはshell scriptからwget -q -O-を呼ぶだけです。<br/>
+* すでにperl等で作られたものはありますが、似たような機能をjava servletで実装しました。
+* muninのpluginの機能は全てservletで実装してあります。
+* あとはshell scriptからwget -q -O-を呼ぶだけです。
 
 ##インストール手順
 * munin.warをhttp://woontai.dip.jp/muninwardownload/ からダウンロードする。
-* munin.warをtomcatのwebappsにコピーする。<br/>
+* munin.warをtomcatのwebappsにコピーする。
 * http://localhost:8080/munin/をアクセスして、解説ページが表示されることを確認する。
 * webapps/munin/shにあるcatalina_*をmuninのplugin directory(centosの場合/usr/share/munin/plugins)にコピーする。
 * コピーしたcatalina_*に実行権限を与える。(chmod +x catalina_*)
