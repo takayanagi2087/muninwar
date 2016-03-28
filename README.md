@@ -9,8 +9,8 @@ Munin用のTomcat pluginです。
 ##インストール手順
 * munin.warをhttp://woontai.dip.jp/muninwardownload/ からダウンロードする。
 * munin.warをtomcatのwebappsにコピーする。<br/>
-* http://localhost:8080/munin/をアクセスして、解説pageが表示されることを確認する。
-* webapps/munin/shにあるcatalina_*をmuninのplugin directory(centosの場合/usr/share/munin/plugins)にcopyする。
+* http://localhost:8080/munin/をアクセスして、解説ページが表示されることを確認する。
+* webapps/munin/shにあるcatalina_*をmuninのplugin directory(centosの場合/usr/share/munin/plugins)にコピーする。
 * コピーしたcatalina_*に実行権限を与える。(chmod +x catalina_*)
 * コピーしたpluginを所定のdirectory(centosの場合/etc/munin/plugins)にsymbolic linkするか、以下のcommandで自動追加する。
 /usr/sbin/munin-node-configure --shell | grep catalina | sh
@@ -19,4 +19,5 @@ Munin用のTomcat pluginです。
 ##更新履歴
 * 1.01 tomcat8.0対応。
 
-
+##License
+GPLv2
