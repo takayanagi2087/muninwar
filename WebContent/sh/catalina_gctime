@@ -1,0 +1,33 @@
+#!/bin/sh
+# -*- sh -*-
+#
+# Plugin to tomcat JVM gc time.
+#
+# Parameters:
+#
+#       config   (required)
+#       autoconf (optional - only used by munin-config)
+#
+#
+# Magic markers (optional - used by munin-config and some installation
+# scripts):
+#%# family=auto
+#%# capabilities=autoconf
+
+if [ "${url}" = "" ]; then
+        export url=http://localhost:8080/munin/plugin
+fi
+
+
+if [ "$1" = "autoconf" ]; then
+        wget -q -O - ${url}?a=autoconf
+        exit 0
+fi
+
+if [ "$1" = "config" ]; then
+        wget -q -O - ${url}?g=gctime\&a=config
+        exit 0
+fi
+
+wget -q -O - ${url}?g=gctime\&a=value
+exit 0

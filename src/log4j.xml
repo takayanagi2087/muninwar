@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<!--テキストにログを出力するConsoleAppenderをSTDOUTとして定義(catalina.outに出ます) -->
+	<appender name="STDOUT" class="org.apache.log4j.ConsoleAppender" >
+		<!-- ログの出力形式を指定 -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %-5p (%F:%L) - %m%n"/>
+		</layout>
+	</appender>
+	
+	<category name="munin.plugin">
+		<level value="DEBUG" /><!--ある程度情報をとりたい場合はこれを使用する。-->
+		<appender-ref ref="STDOUT" /><!-- 標準出力(catalina.out)に出力 -->
+	</category> 
+	
+	<!-- デフォルト設定 -->
+	<root>
+		<level value="DEBUG" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+</log4j:configuration>
