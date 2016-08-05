@@ -17,7 +17,7 @@ Munin用のTomcat pluginです。
 * munin-nodeを再起動(centosの場合はservice munin-node restart)して完了。
 
 ##更新履歴
-* 1.01 tomcat8.0対応。tomcay9でも動作を確認(2016/08/05)。
+* 1.01 tomcat8.0対応。tomcat9でも動作を確認(2016/08/05)。
 
 ##License
 GPLv2
