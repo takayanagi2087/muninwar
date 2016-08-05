@@ -5,9 +5,6 @@
         <dependent-module archiveName="log4j-1.2.14.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/log4j-1.2.14/log4j-1.2.14">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="commons-logging-1.1.jar" deploy-path="/WEB-INF/lib/" handle="module:/resource/commons-logging-1.1/commons-logging-1.1">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="munin"/>
         <property name="java-output-path" value="/munin/build/classes"/>
     </wb-module>

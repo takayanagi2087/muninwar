@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>log4j-1.2.14</project>
-		<project>commons-logging-1.1</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
